@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./assets/script/Tache.js"></script>
+    <script src="./assets/script/taches.js"></script>
+    <script src="./assets/script/Liste.js"></script>
+    <script src="./assets/script/Form.js"></script>
+    <script src="./assets/script/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>To-Do-er</h1>
+            <p>Un gestionnaire de tâches (to-do-list) en POO.</p>
+        </header>
+        <div>
+            <h2>Ajouter une tâche</h2>
+            <div>
+                <form data-js-form action="#">
+                    <div data-js-tache-wrapper>
+                        <label for="tache">Nouvelle tâche :</label>
+                        <input type="text" name="tache" id="tache" value = "" required>
+                        <small data-js-error></small>
+                    </div>
+                    <div>
+                        <label for="description">Description :</label>
+                        <!-- la description n'est pas un champ obligatoire -->
+                        <input type="text" name="description" id="description">
+                    </div>
+                    <div data-js-radio-wrapper required>
+                        <label>
+                            Haute:
+                            <input type="radio" name="priorite" id="radioBtn" value="1" data-js-radio>
+                        </label>
+                        <label>
+                            Moyenne :
+                            <input type="radio" name="priorite" id="radioBtn" value="2" data-js-radio>
+                        </label>
+                        <label>
+                            Basse :
+                            <input type="radio" name="priorite" id="radioBtn" value="3" data-js-radio>
+                        </label>
+                        <small data-js-error=""></small>
+                    </div>
+                    <button>Ajouter</button>
+                </form>
+            </div>
+        </div>
+        <div class="listeTaches" data-js-liste-taches>
+            <h2>Liste des tâches</h2>
+            <div>
+                <button data-js-tri-alph>Trier par ordre alphabétique</button>
+                <button data-js-tri-importance>Trier par importance</button>
+            </div>
+            <div data-js-liste-taches-container>
+
+            </div>
+        </div>
+        <div class="detail" >
+            <h2>Détail d'une tâche</h2>
+            <div data-js-detail>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

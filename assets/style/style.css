@@ -1,0 +1,26 @@
+*{
+    margin: 10px;
+    
+}
+
+header{
+    padding-bottom: 30px;
+    border-bottom: grey 2px solid;
+}
+
+
+.listeTaches, .detail{
+    border: solid 1px black;
+}
+
+.inputTache{
+    margin: 10px;
+}
+
+.error{
+    color: red;
+}
+
+.containerListeTache{
+    display: flex;
+}
